@@ -1,0 +1,196 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #00ffff; /* Текст бирюзового цвета */
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #00ffff !important; /* Заголовки тоже бирюзовые */
+  text-align: center;
+}
+
+/* Общий контейнер */
+.container {
+  background-color: #1a1a1a; /* Темно-серый фон */
+  padding: 0px;
+  margin: 0 auto;
+  min-height: 100vh;
+  width: 100vw; /* Растягиваем на всю ширину экрана */
+  box-sizing: border-box; /* Учитываем padding в ширине */
+  overflow-x: hidden; /* Убираем горизонтальные полосы */
+}
+
+/* Фильтрация */
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.filter-input {
+  padding: 10px;
+  border: 1px solid #00ff99;
+  border-radius: 5px;
+  background-color: #2a2a2a; /* Темно-серый фон */
+  color: #00ffff; /* Бирюзовый текст */
+}
+
+.filter-input::placeholder {
+  color: #00ffff; /* Цвет текста внутри placeholder */
+}
+
+/* Стили для поля "Поиск по названию" */
+.filter-input.search {
+  width: 200px; /* Уменьшаем ширину */
+  height: 45px;
+}
+
+/* Стили для полей "Минимальная цена" и "Максимальная цена" */
+.filter-input.price {
+  width: 200px; /* Увеличиваем ширину */
+  height: 45px;
+}
+
+/* Переопределение для react-bootstrap */
+.form-control {
+  background-color: #2a2a2a !important; /* Убедитесь, что фон применен */
+  border: 1px solid #00ff99 !important;
+  color: #00ffff !important;  /* Применяем бирюзовый цвет текста */
+}
+
+.form-control::placeholder {
+  color: #00ffff !important;  /* Цвет текста внутри placeholder */
+}
+
+/* Кнопки */
+button {
+  padding: 10px 15px;
+  background-color: #00ff99;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #00cc77;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  color: #00ffff;
+}
+
+label {
+  text-align: left;
+  color: #00ffff;
+  width: 105px;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #00ff99;
+  border-radius: 5px;
+  background-color: #1e1e1e;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+  color: #00ffff;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+  color: #00ffff; /* Бирюзовый цвет для текста в placeholder */
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #00ff99;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #00cc77;
+}
+
+/* Страница списка услуг */
+.service-card {
+  background-color: #1e1e1e;
+  border: 1px solid #00ff99;
+  border-radius: 10px;
+  padding: 15px;
+  width: 250px;
+  text-align: center;
+  margin: 10px;
+}
+
+.service-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.service-card h2 {
+  color: #00ff99;
+  font-size: 20px;
+}
+
+.service-card p {
+  color: #00ffff;
+}
+
+/* Стили для страницы списка услуг - для контейнера */
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100%; /* Убираем белые вертикальные полосы */
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between; /* Выравнивание кнопок по горизонтали */
+  gap: 20px; /* Отступ между кнопками */
+  margin-top: 20px;
+}
+
+.delete-all-btn {
+  background-color: darkred !important;
+  border: none;
+  color: #fff;
+}
+
+.delete-all-btn:hover {
+  background-color: darkred;
+}
+
+
+/* Мобильные стили */
+@media (max-width: 768px) {
+  .container {
+      padding: 10px;
+  }
+}
